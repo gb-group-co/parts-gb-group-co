@@ -1,5 +1,7 @@
 * {font-family: 'Noto Sans', sans-serif; color: #3c3c3b;} 
 .img-fluid {width: 100%;}
+@media (min-width:576px){.cat-fluid {width: 120px;}}
+@media (max-width:575px){.cat-fluid {width: 90px;}} 
 a {color: #aaaaaa;}
 a:hover {color: #333333; text-decoration: underline;}
 a.anchor {display: block; position: relative; top: 50px; visibility: hidden;}
@@ -17,12 +19,14 @@ p.pricedl {font-size: 0.8rem; margin-bottom: 0;}
 .kanit {font-family: 'Kanit', sans-serif; font-weight: 500; color: #266d3b; font-size: 1.2rem; margin-top: 1.75rem;}
 
 #latestUpdate {margin-top: 3rem; margin-bottom: 2rem;}
-.catalogueSearch, .partSearch {background: #F5F5F5;}
+.searchBox {background: #F5F5F5;}
+/*
 #search-input,#partrate-search-input::placeholder {color: #DDD;}
-#search-input,#partrate-search-input::-webkit-input-placeholder {color: #DDD;} /* Chrome/Opera/Safari */
-#search-input,#partrate-search-input::-moz-placeholder {color: #DDD;} /* Firefox 19+ */
-#search-input,#partrate-search-input:-ms-input-placeholder {color: #DDD;} /* IE 10+ */
-#search-input,#partrate-search-input:-moz-placeholder {color: #DDD;}  /* Firefox 18- */
+#search-input,#partrate-search-input::-webkit-input-placeholder {color: #DDD;}
+#search-input,#partrate-search-input::-moz-placeholder {color: #DDD;}
+#search-input,#partrate-search-input:-ms-input-placeholder {color: #DDD;}
+#search-input,#partrate-search-input:-moz-placeholder {color: #DDD;}
+*/
 
 @media (min-width:576px){.tab-nav-logos {width: 80px;}}
 
@@ -36,7 +40,10 @@ p.pricedl {font-size: 0.8rem; margin-bottom: 0;}
 
 .pricelists h6 {font-size: 0.8rem;}
 
-.section-divider {margin-top: 5rem; margin-bottom: 4rem;}
+hr {margin-top: 5rem; margin-bottom: 4rem;}
+
+.upp {text-transform: uppercase;font-size: 0.75rem;}
+.filename {font-size: 0.5rem;}
 
 @media (min-width: 992px) {.navbar-expand-lg .navbar-nav .nav-link {padding-right: 1rem; padding-left: 1rem;}}
 
@@ -45,7 +52,7 @@ p.pricedl {font-size: 0.8rem; margin-bottom: 0;}
 .row.subsidiary h4 {font-weight:bold;}
 .row.subsidiary address {font-style: italic;}
 .partrate-result {border: 1px solid #CCC; margin-bottom: 0.5rem; padding: 0.3rem; background: #FFF;}
-
+.cat-result {margin-bottom: 0.5rem;}
 a.anchor {
     display: block;
     position: relative;

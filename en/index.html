@@ -63,12 +63,49 @@
         <img src="https://marketing.gb-group.co/img/logos/logo-gb-group-color-onwhite.png" width="125">
       </div>
 
-      <h3 class="text-center">Parts Rates</h3>
-      <br>
+      <div class="row">
 
-      <div class="row justify-content-center partsrates">
-        <div class="col-10">
-          <div class="card partSearch">
+        <div class="col">
+          <h3 class="text-center">Parts Catalogues</h3>
+          <br>
+
+          <div class="card searchBox">
+            <div class="card-body text-center">
+              <form>
+                <div class="form-group">
+                  <label for="search-input"><small>Type a range, a serial number or a model name</small></label>
+                  <input id="search-input" class="form-control-lg" placeholder="Ex: N139032">
+                </div>
+              </form>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-11">
+                <div class="list-group" id="hits">
+                </div>
+                <br>
+                <br>
+                <div id="pagination"></div>
+              </div>
+            </div>
+
+            <script type="text/html" id="hit-template">
+              <div class="cat-result">
+                <a href="https://marketing.cellar.services.clever-cloud.com/catalogues/gregoire-besson/{{filename}}" download target="_blank" class="list-group-item list-group-item-action">
+                  <img src="../img/catalogues/catalogue-small.png" alt="Parts Catalogue {{serie}} - {{model}}" style="width:15px;"> <span class="serial"><small>Serial:</small> <strong>{{serie}}</strong></span> - <span class="model"><small>Model:</small> <span class="upp">{{model}}</span></span>
+                  <br>
+                  <span class="filename">{{filename}}</span>
+                </a>
+              </div>
+            </script>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <h3 class="text-center">Parts Rates<small>*</small></h3>
+          <br>
+
+          <div class="card searchBox">
             <div class="card-body text-center">
               <form>
                 <div class="form-group">
@@ -78,7 +115,7 @@
               </form>
             </div>
             <div class="row justify-content-center">
-              <div class="col-4">
+              <div class="col-11">
                 <div class="list-group" id="partrate-hits">
                 </div>
                 <br>
@@ -86,93 +123,85 @@
                 <div id="partrate-pagination"></div>
               </div>
             </div>
-          </div>
-        </div>
-        
-        <script type="text/html" id="partrate-hit-template">
-         <p class="partrate-result">
-          <span class="ref"><small>Ref:</small> <strong>{{ref}}</strong></span>
-          <br>
-          <span class="model"><small>Label (FR): <em>{{label_fr}}</em></small></span>
-          <br>
-          <span class="model"><small>Weight:</small> <strong>{{weight}} kg.</strong></span>  - <span class="model"><small>Price:</small> <strong>{{price_eur}} €</strong></span>
-         </p>
-        </script>
-      </div>
-
-
-      <hr class="section-divider">
-
-          
-      <h3 class="text-center">Parts Catalogues <small>(Only ploughs at the moment)</small></h3>
-      <br>
-
-      <div class="row justify-content-center partscatalogues">
-        <div class="col-10">
-          <div class="card catalogueSearch">
-            <div class="card-body text-center">
-              <form>
-                <div class="form-group">
-                  <label for="search-input"><small>Type serial number or model name</small></label>
-                  <input id="search-input" class="form-control-lg" placeholder="Ex: N139032">
-                </div>
-              </form>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-4">
-                <div class="list-group" id="hits">
-                </div>
-                <br>
-                <br>
-                <div id="pagination"></div>
-              </div>
-            </div>
+            
+            <script type="text/html" id="partrate-hit-template">
+             <p class="partrate-result">
+              <span class="ref"><small>Ref:</small> <strong>{{ref}}</strong></span>
+              <br>
+              <span class="model"><small>Label (FR): <em>{{label_fr}}</em></small></span>
+              <br>
+              <span class="model"><small>Weight:</small> <strong>{{weight}} kg.</strong></span>  - <span class="model"><small>Price:</small> <strong>{{price_eur}} €</strong></span>
+             </p>
+            </script>
           </div>
         </div>
 
-        <script type="text/html" id="hit-template">
-          <a href="https://marketing.cellar.services.clever-cloud.com/catalogues/gregoire-besson/{{filename}}" download target="_blank" class="list-group-item list-group-item-action">
-            <img src="../img/catalogues/catalogue-small.png" alt="Parts Catalogue {{serie}} - {{model}}" style="width:15px;"> <span class="serial"><small>Serial:</small> <strong>{{serie}}</strong></span> - <span class="model"><small>Model:</small> <strong>{{model}}</strong></span>
-          </a>
-        </script>
       </div>
-
+      
+      
+      <hr>
       
 
-      <hr class="section-divider">
 
-
-      <h3 class="text-center">Pricelists</h3>
-      <br>
-      
-      <div class="row justify-content-md-center">
-        <div class="col-6 col-md-2">
-          <div class="card text-center">
-            <div class="card-body">
-              <h6>Parts (EN)</h6>
-              <img class="img-fluid" src="../img/pricelists/gb-parts.jpg">
-              <p class="pricedl"><a href="http://marketing.cellar.services.clever-cloud.com/pricelists/gregoire-besson/pricelist-gregoirebesson-parts-en.pdf" download>&darr; Download</a></p>
+      <div class="row justify-content-around">
+        <div class="col-5">
+          <h4 class="text-center">Pricelists<small>*</small></h4>
+          <br>
+          <div class="row">
+            <div class="col">
+              <a href="http://marketing.cellar.services.clever-cloud.com/pricelists/gregoire-besson/pricelist-gregoirebesson-parts-en.pdf" download>
+                <div class="card text-center">
+                  <div class="card-body">
+                    <h6>Parts (English)</h6>
+                    <img class="cat-fluid" src="../img/pricelists/gb-parts.jpg">
+                    <p class="pricedl">&darr; Download</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="http://marketing.cellar.services.clever-cloud.com/pricelists/gregoire-besson/pricelist-gregoirebesson-parts-fr.pdf" download>
+                <div class="card text-center">
+                  <div class="card-body">
+                    <h6>Parts (Français)</h6>
+                    <img class="cat-fluid" src="../img/pricelists/gb-parts.jpg">
+                    <p class="pricedl">&darr; Download</p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="col-6 col-md-2">
-          <div class="card text-center">
-            <div class="card-body">
-              <h6>Parts (FR)</h6>
-              <img class="img-fluid" src="../img/pricelists/gb-parts.jpg">
-              <p class="pricedl"><a href="http://marketing.cellar.services.clever-cloud.com/pricelists/gregoire-besson/pricelist-gregoirebesson-parts-fr.pdf" download>&darr; Download</a></p>
+        <div class="col-4">
+          <h4 class="text-center">Website</h4>
+          <br>
+          <div class="row">
+            <div class="col-12">
+              <a href="https://piecesnaud.com" target="_blank">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <h6>PiecesNaud.com</h6>
+                    <img class="img-fluid" src="../img/piecesnaud.jpg">
+                    <p class="pricedl">Browse &rarr;</p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
+
+      <br>
 
       <div class="row justify-content-center">
-        <p><small>Suggested ex-works rates, subject to change without notice.</small></p>
+        <p class="text-center">
+          <small>*Suggested ex-works rates, subject to change without notice.</small>
+          <br>
+          <small>Latest update : 20/03/2018</small>
+        </p>
       </div>
 
-      
-      <p class="text-center"><small>Latest update : 07/03/2018</small></p>
 
     </div>
     
