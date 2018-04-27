@@ -21,11 +21,15 @@ $parts = $client->initIndex('parts');
 $parts->setSettings(array(
   "searchableAttributes" => [
     "ref",
-    "label_fr"
+    "label_en",
+    "label_fr",
+    "label_de"
   ],
   "customRanking" => [
     "asc(ref)",
+    "desc(label_en)",
     "desc(label_fr)",
+    "desc(label_de)",
     "desc(price_eur)",
     "desc(weight)"
   ]
