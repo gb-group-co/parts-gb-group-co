@@ -141,6 +141,50 @@
         </div>
 
       </div>
+
+      <hr>
+
+      <div class="row">
+
+        <div class="col">
+        </div>
+
+        <div class="col">
+          <h3 class="text-center">Rabe Manuals</h3>
+          <br>
+
+          <div class="card searchBox">
+            <div class="card-body text-center">
+              <form>
+                <div class="form-group">
+                  <label for="search-input"><small>Type a model name, a year or a language</small></label>
+                  <input id="rabemanuals-search-input" class="form-control-lg" placeholder="Ex: Tigris">
+                </div>
+              </form>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-11">
+                <div class="list-group" id="rabemanuals-hits">
+                </div>
+                <br>
+                <br>
+                <div id="rabemanuals-pagination"></div>
+              </div>
+            </div>
+
+            <script type="text/html" id="rabemanuals-hit-template">
+              <div class="cat-result">
+                <a href="https://marketing.cellar.services.clever-cloud.com/manuals/rabe/{{filename}}" download target="_blank" class="list-group-item list-group-item-action">
+                  <img src="../img/catalogues/catalogue-small.png" alt="Manual" style="width:15px;"> <span class="serial"><small>Model</small> <strong>{{model}}</strong></span> - <span class="model"><small>Year:</small> <span class="upp">{{year}}</span> - <span class="model"><small>Language:</small> <span class="upp">{{language}}</span></span>
+                  <br>
+                  <span class="filename">{{filename}}</span>
+                </a>
+              </div>
+            </script>
+          </div>
+        </div>
+
+      </div>
       
       
       <hr>
@@ -274,7 +318,7 @@
         <p class="text-center">
           <small>*Suggested ex-works rates, subject to change without notice.</small>
           <br>
-          <small>Latest update : 02/05/2018</small>
+          <small>Latest update : 28/05/2018</small>
         </p>
       </div>
 
@@ -288,6 +332,7 @@
     <script src="../js/instantsearch.min.js"></script>
     <script src="../js/app.js"></script>
     <script src="../js/app-parts.js"></script>
+    <script src="../js/app-rabemanuals.js"></script>
 
   </body>
 </html>
