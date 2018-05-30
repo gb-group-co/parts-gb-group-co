@@ -20,8 +20,8 @@ $rabemanuals = $client->initIndex('manuals');
 
 $rabemanuals->setSettings(array(
   "searchableAttributes" => [
-    "filename",
     "model",
+    "filename",
     "year",
     "language"
   ],
