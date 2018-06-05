@@ -90,7 +90,7 @@
 
             <script type="text/html" id="hit-template">
               <div class="cat-result">
-                <a href="https://marketing.cellar.services.clever-cloud.com/catalogues/gregoire-besson/{{filename}}" download target="_blank" class="list-group-item list-group-item-action">
+                <a href="https://marketing.cellar.services.clever-cloud.com/catalogues/gregoire-besson/{{filename}}" download target="_blank" class="list-group-item list-group-item-action" title="Click to download">
                   <img src="../img/catalogues/catalogue-small.png" alt="Parts Catalogue {{serie}} - {{model}}" style="width:15px;"> <span class="serial"><small>Serial:</small> <strong>{{serie}}</strong></span> - <span class="model"><small>Model:</small> <span class="upp">{{model}}</span></span>
                   <br>
                   <span class="filename">{{filename}}</span>
@@ -147,7 +147,7 @@
       <div class="row justify-content-center">
 
         <div class="col-8">
-          <h3 class="text-center">Manuals</h3>
+          <h3 class="text-center">User Manuals</h3>
           <br>
 
           <div class="card searchBox">
@@ -171,9 +171,11 @@
 
             <script type="text/html" id="manuals-hit-template">
               <div class="manuals-result">
-                <a href="https://marketing.cellar.services.clever-cloud.com/manuals/{{filename}}" download target="_blank" class="list-group-item list-group-item-action">
-                  <img src="../img/catalogues/catalogue-small.png" alt="Manual" style="width:15px;"> <small>Brand</small> <strong>{{brand}}</strong> <span class="serial"><small>Model</small> <strong>{{model}}</strong></span> - <span class="model"><small>Year:</small> <span class="upp">{{year}}</span> - <span class="model"><small>Language:</small> <span class="upp">{{language}}</span></span>
-                  <br>
+                <a href="https://marketing.cellar.services.clever-cloud.com/manuals/{{filename}}" download target="_blank" class="list-group-item list-group-item-action" title="Click to download">
+                  <span class="serial"><small>Model</small> <strong>{{model}}</strong></span><br>
+                  <span class="model"><small>Year:</small> <span class="upp">{{year}}</span><br>
+                  <span class="model"><small>Language:</small> <span class="upp">{{language}}</span></span><br>
+                  <span class="brand"><small>Brand:</small> <span class="upp">{{brand}}</span></span><br>
                   <span class="filename">{{filename}}</span>
                 </a>
               </div>
