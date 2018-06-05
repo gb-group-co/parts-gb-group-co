@@ -16,9 +16,9 @@ $index->setSettings(array(
 ));
 
 
-$rabemanuals = $client->initIndex('manuals');
+$manuals = $client->initIndex('manuals');
 
-$rabemanuals->setSettings(array(
+$manuals->setSettings(array(
   "searchableAttributes" => [
     "model",
     "filename",
@@ -28,7 +28,8 @@ $rabemanuals->setSettings(array(
   "customRanking" => [
     "desc(model)",
     "desc(year)",
-    "desc(language)"
+    "desc(language)",
+    "desc(brand)"
   ]
 ));
 
