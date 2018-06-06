@@ -11,7 +11,8 @@ $index->setSettings(array(
     "model"
   ],
   "customRanking" => [
-    "desc(serie)"
+    "desc(serie)",
+    "desc(brand)"
   ]
 ));
 
