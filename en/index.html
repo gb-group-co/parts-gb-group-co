@@ -101,8 +101,45 @@
           </div>
         </div>
 
-
         <div class="col">
+          <h3 class="text-center">User Manuals</h3>
+          <br>
+
+          <div class="card searchBox">
+            <div class="card-body text-center">
+              <form>
+                <div class="form-group">
+                  <label for="manuals-search-input"><small>Type a model name, a year or a language</small></label>
+                  <input id="manuals-search-input" class="form-control-lg" placeholder="Ex: Crossland, Tigris...">
+                </div>
+              </form>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-11">
+                <div class="list-group" id="manuals-hits">
+                </div>
+                <br>
+                <br>
+                <div id="manuals-pagination"></div>
+              </div>
+            </div>
+
+            <script type="text/html" id="manuals-hit-template">
+              <div class="manuals-result">
+                <a href="https://marketing.cellar.services.clever-cloud.com/manuals/{{filename}}" download target="_blank" class="list-group-item list-group-item-action" title="Click to download">
+                  <span class="serial"><small>Model</small> <strong>{{model}}</strong></span><br>
+                  <span class="model"><small>Year:</small> <span class="upp">{{year}}</span><br>
+                  <span class="model"><small>Language:</small> <span class="upp">{{language}}</span></span><br>
+                  <span class="brand"><small>Brand:</small> <span class="upp">{{brand}}</span></span><br>
+                  <span class="filename">{{filename}}</span>
+                </a>
+              </div>
+            </script>
+          </div>
+        </div>
+
+
+        <!--<div class="col">
           <h3 class="text-center">Parts Rates<small>*</small></h3>
           <br>
 
@@ -139,50 +176,7 @@
              </p>
             </script>
           </div>
-        </div>
-
-      </div>
-
-      <hr>
-
-      <div class="row justify-content-center">
-
-        <div class="col-8">
-          <h3 class="text-center">User Manuals</h3>
-          <br>
-
-          <div class="card searchBox">
-            <div class="card-body text-center">
-              <form>
-                <div class="form-group">
-                  <label for="manuals-search-input"><small>Type a model name, a year or a language</small></label>
-                  <input id="manuals-search-input" class="form-control-lg" placeholder="Ex: Crossland, Tigris...">
-                </div>
-              </form>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-11">
-                <div class="list-group" id="manuals-hits">
-                </div>
-                <br>
-                <br>
-                <div id="manuals-pagination"></div>
-              </div>
-            </div>
-
-            <script type="text/html" id="manuals-hit-template">
-              <div class="manuals-result">
-                <a href="https://marketing.cellar.services.clever-cloud.com/manuals/{{filename}}" download target="_blank" class="list-group-item list-group-item-action" title="Click to download">
-                  <span class="serial"><small>Model</small> <strong>{{model}}</strong></span><br>
-                  <span class="model"><small>Year:</small> <span class="upp">{{year}}</span><br>
-                  <span class="model"><small>Language:</small> <span class="upp">{{language}}</span></span><br>
-                  <span class="brand"><small>Brand:</small> <span class="upp">{{brand}}</span></span><br>
-                  <span class="filename">{{filename}}</span>
-                </a>
-              </div>
-            </script>
-          </div>
-        </div>
+        </div>-->
 
       </div>
       
@@ -276,7 +270,7 @@
 
 
 
-      <hr>-->
+      <hr>
 
 
 
@@ -302,7 +296,7 @@
             </div>
           </div>  
         </div>
-      </div>
+      </div>-->
 
 
 
@@ -318,7 +312,7 @@
         <p class="text-center">
           <small>*Suggested ex-works rates, subject to change without notice.</small>
           <br>
-          <small>Latest update : 05/06/2018</small>
+          <small>Latest update : 26/06/2018</small>
         </p>
       </div>
 
