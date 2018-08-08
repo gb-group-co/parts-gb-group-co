@@ -11,8 +11,8 @@ $index->setSettings(array(
     "model"
   ],
   "customRanking" => [
-    "desc(serie)",
-    "desc(brand)"
+    "asc(serie)",
+    "asc(brand)"
   ]
 ));
 
@@ -27,10 +27,10 @@ $manuals->setSettings(array(
     "language"
   ],
   "customRanking" => [
-    "desc(model)",
+    "asc(model)",
     "desc(year)",
     "desc(language)",
-    "desc(brand)"
+    "asc(brand)"
   ]
 ));
 
@@ -46,11 +46,12 @@ $parts->setSettings(array(
   ],
   "customRanking" => [
     "asc(ref)",
-    "desc(label_en)",
-    "desc(label_fr)",
-    "desc(label_de)",
-    "desc(price_eur)",
-    "desc(weight)"
+    "asc(label_en)",
+    "asc(label_fr)",
+    "asc(label_de)",
+    "asc(price_eur)",
+    "asc(weight)",
+    "asc(brand)"
   ]
 ));
 ?>
