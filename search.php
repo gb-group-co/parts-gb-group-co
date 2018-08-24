@@ -57,7 +57,7 @@ $parts->setSettings(array(
     "asc(fr)",
     "asc(en)",
     "asc(de)",
-    "asc(price_eur)",
+    "asc(price)",
     "asc(weight)",
     "asc(brand)"
   ]
