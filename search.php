@@ -42,21 +42,21 @@ $parts = $client->initIndex('parts_v2');
 
 $parts->setSettings(array(
   "searchableAttributes" => [
-    "reference",
-    "fr",
-    "en",
-    "de",
-    "it",
-    "pl",
-    "ru",
-    "uk",
+    "ref",
+    "label_fr",
+    "label_en",
+    "label_de",
+    "label_it",
+    "label_pl",
+    "label_ru",
+    "label_uk",
     "brand"
   ],
   "customRanking" => [
-    "asc(reference)",
-    "asc(fr)",
-    "asc(en)",
-    "asc(de)",
+    "asc(ref)",
+    "asc(label_fr)",
+    "asc(label_en)",
+    "asc(label_de)",
     "asc(price)",
     "asc(weight)",
     "asc(brand)"
