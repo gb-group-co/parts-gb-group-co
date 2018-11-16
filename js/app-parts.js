@@ -1,4 +1,4 @@
-var parts_search = instantsearch({
+const parts_search = instantsearch({
   // Replace with your own values
   appId: 'BG3AX4OCRB',
   apiKey: '0a5e0edb3588b17ea4255c35f077e00d', // search only API key, no ADMIN key
@@ -21,7 +21,7 @@ var parts_search = instantsearch({
 
 parts_search.addWidget(
   instantsearch.widgets.searchBox({
-    container: '#partrate-search-input',
+    container: '#search-input',
     autofocus: false
   })
 );
@@ -46,4 +46,12 @@ parts_search.addWidget(
   })
 );
 
+parts_search.addWidget(
+  instantsearch.widgets.stats({
+    container: '#tabsRates',
+    templates: [(StatsBodyData) => nbHits]
+  })
+);
+
 parts_search.start();
+

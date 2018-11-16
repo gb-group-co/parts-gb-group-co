@@ -60,3 +60,7 @@ a.anchor {
     visibility: hidden;
 }
 .ratio {display: block; width: 100%; padding-bottom: 65%; background-repeat: no-repeat; background-position: center center; background-size: cover;}
+
+.ais-stats--time {
+    display: none;
+}

@@ -1,4 +1,4 @@
-var manuals_search = instantsearch({
+const manuals_search = instantsearch({
   // Replace with your own values
   appId: 'BG3AX4OCRB',
   apiKey: '0a5e0edb3588b17ea4255c35f077e00d', // search only API key, no ADMIN key
@@ -21,7 +21,7 @@ var manuals_search = instantsearch({
 
 manuals_search.addWidget(
   instantsearch.widgets.searchBox({
-    container: '#manuals-search-input',
+    container: '#search-input',
     autofocus: false
   })
 );
@@ -46,4 +46,13 @@ manuals_search.addWidget(
   })
 );
 
+manuals_search.addWidget(
+  instantsearch.widgets.stats({
+    container: '#tabsManuals',
+    templates: [(StatsBodyData) => nbHits]
+  })
+);
+
 manuals_search.start();
+
+
