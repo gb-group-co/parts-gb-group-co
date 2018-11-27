@@ -64,3 +64,17 @@ a.anchor {
 .ais-stats--time {
     display: none;
 }
+
+.hover {
+    border: 2px solid black;
+    border-radius : 6px;
+}
+
+.hover:hover {
+    background-color: #F5F5F5;
+}
+
+.active {
+    font-weight: bold !important;
+    text-decoration: underline !important;
+}

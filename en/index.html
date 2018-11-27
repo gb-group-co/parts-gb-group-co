@@ -133,19 +133,30 @@
 
     <br>
     <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <h4 class="text-center">Your result by sort</h4>
+          <small><p class="text-center">Clic on your tab to see your results</p></small>
+        </div>
+        <div class="col-3"></div>
+      </div>
+
+    </div>
     <br>
     <div class="container">
 
-        <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
-          <li class="nav-item">
+        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+          <li class="nav-item hover">
               <a class="nav-link active" id="home-tab" data-toggle="tab" href="#Catalogue" role="tab" aria-controls="home" aria-selected="true">Parts Catalogue<span id="tabsCatalog"></span></a>
           </li> 
 
           <script type="text/html" id="tab-template"> - 0</script>
-          <li class="nav-item">
+          <li class="nav-item hover">
             <a class="nav-link" id="profile-tab" data-toggle="tab" href="#Rates" role="tab" aria-controls="profile" aria-selected="false">Parts Rates<span id="tabsRates"></span></a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item hover">
             <a class="nav-link" id="contact-tab" data-toggle="tab" href="#Manuals" role="tab" aria-controls="contact" aria-selected="false">User Manuals<span id="tabsManuals"></span></a>
           </li>
         </ul>
@@ -168,7 +179,7 @@
               <span class="serial"><small>Serial:</small> <strong>{{serie}}</strong></span><br>
               <span class="model"><small>Model:</small> <span class="upp">{{range}}</span></span><br>
               <span class="model"><small>Brand:</small> <span class="upp">{{brand}}</span></span><br>
-              <span class="filename">{{filename}}</span>
+              <span class="upp">{{filename}}</span>
             </a>
           </div>
         </script>
