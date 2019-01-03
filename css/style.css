@@ -1,40 +1,96 @@
-* {font-family: 'Noto Sans', sans-serif; color: #3c3c3b;} 
-.img-fluid {width: 100%;}
+* {
+    font-family: 'Noto Sans', sans-serif; 
+    color: #3c3c3b;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
 @media (min-width:576px){.cat-fluid {width: 120px;}}
 @media (max-width:575px){.cat-fluid {width: 90px;}} 
-a {color: #aaaaaa;}
-a:hover {color: #333333; text-decoration: underline;}
-a.anchor {display: block; position: relative; top: 50px; visibility: hidden;}
-#main {}
-h2 {margin-top: 3rem; border-top: 1px solid #CCC; padding-top: 4rem; margin-bottom: 2rem;}
-.lead {font-weight: 200;}
-.navbar-dark {background-color: #3c3c3b!important;}
-.palette {width: 100%; height: 3rem; border-radius: 100px; margin-bottom: 1rem;}
+
+a {
+    color: #aaaaaa;
+}
+
+a:hover {
+    color: #333333; 
+    text-decoration: underline;
+}
+
+a.anchor {
+    display: block; 
+    position: relative; 
+    top: 50px; 
+    visibility: hidden;
+}
+
+h2 {
+    margin-top: 3rem; 
+    border-top: 1px solid #CCC; 
+    padding-top: 4rem; 
+    margin-bottom: 2rem;
+}
+
+.lead {
+    font-weight: 200;
+}
+
+.navbar-dark {
+    background-color: #3c3c3b!important;
+}
+
+.palette {
+    width: 100%; 
+    height: 3rem;
+    border-radius: 100px; 
+    margin-bottom: 1rem;
+}
+
 .pal-3C3C3B {background-color: #3c3c3b;}
 .pal-E2001A {background-color: #e2001a;}
 .pal-0076BD {background-color: #0076bd;}
 .pal-266D3B {background-color: #266d3b;}
-.palette > p {margin-bottom: 0;}
-p.pricedl {font-size: 0.8rem; margin-bottom: 0;}
-.kanit {font-family: 'Kanit', sans-serif; font-weight: 500; color: #266d3b; font-size: 1.2rem; margin-top: 1.75rem;}
 
-#latestUpdate {margin-top: 3rem; margin-bottom: 2rem;}
+.palette > p {margin-bottom: 0;}
+
+p.pricedl {
+    font-size: 0.8rem; 
+    margin-bottom: 0;
+}
+
+.kanit {
+    font-family: 'Kanit', sans-serif; 
+    font-weight: 500; 
+    color: #266d3b; 
+    font-size: 1.2rem; 
+    margin-top: 1.75rem;
+}
+
+#latestUpdate {
+    margin-top: 3rem; 
+    margin-bottom: 2rem;
+}
+
 .searchBox {background: #F5F5F5;}
-/*
-#search-input,#partrate-search-input::placeholder {color: #DDD;}
-#search-input,#partrate-search-input::-webkit-input-placeholder {color: #DDD;}
-#search-input,#partrate-search-input::-moz-placeholder {color: #DDD;}
-#search-input,#partrate-search-input:-ms-input-placeholder {color: #DDD;}
-#search-input,#partrate-search-input:-moz-placeholder {color: #DDD;}
-*/
+
 
 @media (min-width:576px){.tab-nav-logos {width: 80px;}}
-
 @media (max-width:575px){.tab-nav-logos {width: 50px;}}
+@media (min-width: 992px) {
+    .navbar-expand-lg 
+    .navbar-nav 
+    .nav-link {
+        padding-right: 1rem; 
+        padding-left: 1rem;
+    }
+}
 
-.card {}
-
-.img-nav-logo {width: 30px; margin-right: 10px;}
+.img-nav-logo {
+    width: 30px; 
+    margin-right: 10px;
+}
 
 .logos h4.card-title, .logos a {font-size: 0.85rem;}
 
@@ -42,16 +98,24 @@ p.pricedl {font-size: 0.8rem; margin-bottom: 0;}
 
 hr {margin-top: 5rem; margin-bottom: 4rem;}
 
-.upp {text-transform: uppercase;font-size: 0.75rem;}
-.filename {font-size: 0.5rem;}
+.upp {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
 
-@media (min-width: 992px) {.navbar-expand-lg .navbar-nav .nav-link {padding-right: 1rem; padding-left: 1rem;}}
+.filename {font-size: 0.5rem;}
 
 .row.subsidiary {margin-bottom: 3rem;}
 .row.subsidiary h4, .subsidiary address, .subsidiary p {font-size:0.85rem;}
 .row.subsidiary h4 {font-weight:bold;}
 .row.subsidiary address {font-style: italic;}
-.partrate-result {border: 1px solid #CCC; margin-bottom: 0.5rem; padding: 0.3rem; background: #FFF;}
+.partrate-result {
+    border: 1px solid #CCC; 
+    margin-bottom: 0.5rem; 
+    padding: 0.3rem; 
+    background: #FFF;
+}
+
 .cat-result {margin-bottom: 0.5rem;}
 a.anchor {
     display: block;
@@ -59,7 +123,15 @@ a.anchor {
     top: -150px;
     visibility: hidden;
 }
-.ratio {display: block; width: 100%; padding-bottom: 65%; background-repeat: no-repeat; background-position: center center; background-size: cover;}
+
+.ratio {
+    display: block; 
+    width: 100%; 
+    padding-bottom: 65%; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-size: cover;
+}
 
 .ais-stats--time {
     display: none;
@@ -92,7 +164,7 @@ a.anchor {
 
 .cookies {
     padding: 15px 50px;
-    display: inline;
+    display: none;
     background-color: white;
     bottom: 0px;
     border-top: 2px solid rgb(68, 68, 68);
