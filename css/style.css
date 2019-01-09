@@ -170,3 +170,8 @@ a.anchor {
     border-top: 2px solid rgb(68, 68, 68);
     position: fixed;
 }
+
+.cookies div div {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
