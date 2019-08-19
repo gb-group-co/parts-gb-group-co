@@ -183,6 +183,8 @@
               <span class="serial"><small>Serial:</small> <strong>{{serie}}</strong></span><br>
               <span class="model"><small>Model:</small> <span class="upp">{{range}}</span></span><br>
               <span class="model"><small>Brand:</small> <span class="upp">{{brand}}</span></span><br>
+              <span class="model"><small>Valid date from</small> <span class="upp">{{fromdate}}</span><small> to </small><span class="upp">{{todate}}</span></span><br>
+              <span class="model"><small>Langue:</small> <span class="upp">{{language}}</span></span><br>
               <span class="upp">{{filename}}</span>
             </a>
           </div>
@@ -206,6 +208,8 @@
           <span class="model"><small>Désignation (FR): <em>{{label_fr}}</em></small></span>
           <br>
           <span class="model"><small>Label (DE): <em>{{label_de}}</em></small></span>
+          <br>
+          <span class="model"><small>Display : <em>{{display}}</em></small></span>
           <br>
           <span class="model"><small>Weight:</small> <strong>{{weight}} kg.</strong></span>  - <span class="model"><small>Price:</small> <strong>{{price}} €</strong></span>
           </p>
@@ -288,33 +292,6 @@
       </div>
   
       <hr>
-      <!--Esapce Newsletter-->
-      <!--
-      <div class="row justify-content-around">
-        <div class="col-12">
-          <h4 class="text-center">Newsletters</h4>
-          <br>
-        </div>
-
-        <div class="col">
-        </div>
-        <div class="col-6">
-          <a href="http://eepurl.com/dttTYb" target="_blank" download>
-            <div class="card text-center">
-              <div class="card-body">
-                <img class="cat-fluid" src="../img/email.svg">
-                <br>
-                <br>
-                <h4>Grégoire Besson</h4>
-                <p class="pricedl">&rarr; Subscribe to Newsletter</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col">
-        </div>
-      </div>  
-    -->
       <br>
 
       <div class="row justify-content-center">
@@ -341,15 +318,18 @@
       </div>
     </div>
     
+
     <script src="../js/jquery-3.2.1.slim.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/ie10-viewport-bug-workaround.js"></script>
     <script src="../js/instantsearch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.33.0/algoliasearch.min.js"></script>
     <script src="../js/app.js"></script>
     <script src="../js/app-parts.js"></script>
     <script src="../js/app-manuals.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/backup.js"></script>
 
   </body>
 </html>
